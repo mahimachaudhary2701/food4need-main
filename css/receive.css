@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html,
+body {
+  font-family: 'Open Sans Condensed', sans-serif;
+  letter-spacing: 0.2em;
+  font-size: 1.2em;
+}
+
+/* === Wrapper  ===*/
+.wrapper {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    'nav-bar'
+    'box';
+}
+
+/* === Nav Bab  ===*/
+.nav-bar {
+  grid-area: nav-bar;
+  height: 70px;
+  box-shadow: 0 1px 6px rgba(57, 73, 76, 0.35);
+}
+
+.brand {
+  text-align: center;
+  font-size: 2.3em;
+  text-transform: uppercase;
+  margin-left: 20px;
+  padding: 10px 10px;
+  line-height: 1.42857;
+  color: #222;
+}
+
+.box-wrapper {
+  height: 70vh;
+  position: relative;
+}
+
+/* === Contact form ===*/
+.box {
+  grid-area: box;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  width: 80vw;
+  height: 100%;
+  background-color: #fff;
+  padding: 40px;
+  box-sizing: border-box;
+  box-shadow: 0 3px 60px rgba(57, 73, 76, 0.35);
+}
+
+.box h2 {
+  margin: 0 0 40px;
+  padding: 10px;
+  color: #222;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.box input {
+  font-size: 0.9em;
+  margin: 35px 0;
+}
+
+.box button {
+  font-size: 1.3em;
+  border-bottom: none;
+  cursor: pointer;
+  background: #37a000;
+  color: #fff;
+  margin-bottom: -1em;
+  width: 100%;
+  max-width: 100%;
+  text-transform: uppercase;
+}
+
+.box form div {
+  position: relative;
+  margin: 40px 0;
+}
+
+.box form div label {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  color: #999;
+  pointer-events: none;
+  transition: 0.5s;
+}
+table {
+  width: 100%;
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+table td,
+table th {
+  border: 2px solid black;
+  width: 13rem;
+  text-align: center;
+}
+input {
+  height: 4rem;
+  width: 4rem;
+}

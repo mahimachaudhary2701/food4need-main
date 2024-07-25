@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+.section-main {
+  position: relative;
+  width: 100vw;
+  min-height: 70vh;
+  display: flex;
+  padding: 40px 0px;
+
+  align-items: center;
+}
+.image {
+  height: 100vh;
+  width: 100%;
+  background-image: url('https://fh.imgix.net/https%3A%2F%2Ffhmain.imgix.net%2F2021%2F06%2Fcs-kids-2-REV.jpg%3Fauto%3Dcompress%252Cformat%26ixlib%3Dphp-3.3.0%26s%3De93a5894b15f52bceb2e013e0ac6c2e0?auto=compress%2Cformat&fm=jpg&ixlib=php-1.1.0&q=50&w=2560&s=3d216d5e9686852e85f2644a916b46e0');
+  background-size: cover;
+}
+
+header {
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 100px;
+  background: black;
+}
+
+header.sticky {
+  padding: 15px 100px;
+}
+
+header .brand {
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 3px;
+}
+
+header .menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .menu a {
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  margin: 0 30px;
+  padding: 7 10px;
+  border-radius: 20px;
+  color: rgb(255, 255, 255);
+}
+.caption {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  color: white;
+}
+.section-two{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  
+}
+.row-reverse{
+  display: flex;
+  flex-direction: row-reverse;
+}
+.col{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  max-width: 26rem;
+}
+.img-size{
+  width:40rem
+}
+.row p,.row img,.row-reverse p,.row-reverse img{
+  padding:2rem;
+}
+
+p{
+  font-size: 18px;
+}
+h2{
+  color: #098344;
+}
+.mw{
+  max-width: 80rem;
+}
+.btns{
+  white-space: nowrap;
+  margin:2rem;
+  background-color: white;
+  color: #27BABE;
+   border-color: transparent;
+   padding: 1rem 2rem;
+   font-size: 1rem;
+    font-weight: 1000;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 2px solid #27BABE;
+}
+.btns:hover{
+  color: #FFF;
+  background-color: #27BABE;
+}
+.margin{
+  margin: 1.5rem;
+  text-align: center;
+}
+.adjust{
+  margin-top:-50px;
+   padding-top:50px;
+}
